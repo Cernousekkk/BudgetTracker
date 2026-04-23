@@ -1,0 +1,21 @@
+﻿1. Správa uživatelů
+* Registrace
+* Přihlášení
+* Odhlášení
+2. Evidence financí
+* Přidání příjmu
+* Přidání výdaje
+* Výběr kategorie
+* Poznámka k transakci
+3. Přehledy a výpočty
+* Dynamický zůstatek
+* Historie transakcí
+* Barevné rozlišení
+* Mazání záznamů
+4. Správa kategorií a limity
+* Správa kategorií
+* Hlídání rozpočtů = možnost nastavit si měsíční limit
+* Vizuální varování = překročení limitu v dané kategorii - částa zčervená
+5. Analýza
+* Filtrování dle měsíců
+* Grafy kategorií - kolik jsme v čem utratili
