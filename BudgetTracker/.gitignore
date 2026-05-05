@@ -1,0 +1,19 @@
+# Build slozky
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# OS bordel
+.DS_Store
+Thumbs.db
+
+# logy
+*.log
