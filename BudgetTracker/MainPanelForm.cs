@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BudgetTracker
 {
-    public partial class AddTransactionForm : Form
+    public partial class MainForm : Form
     {
-        public AddTransactionForm()
+        public MainForm()
         {
             InitializeComponent();
         }

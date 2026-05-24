@@ -1,8 +1,8 @@
 namespace BudgetTracker
 {
-    public partial class MainForm : Form
+    public partial class MainPanelForm : Form
     {
-        public MainForm()
+        public MainPanelForm()
         {
             InitializeComponent();
         }
@@ -13,6 +13,14 @@ namespace BudgetTracker
             {
                 var user = context.Users.FirstOrDefault(u => u.UserName == txtBoxUserName.Text && u.Password == txtBoxPassword.Text);
 
+                if (user != null)
+                {
+                    MessageBox.Show($"Welcome, {user.FullName}!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }

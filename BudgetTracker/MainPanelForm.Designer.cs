@@ -1,6 +1,6 @@
 ﻿namespace BudgetTracker
 {
-    partial class AddTransactionForm
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
