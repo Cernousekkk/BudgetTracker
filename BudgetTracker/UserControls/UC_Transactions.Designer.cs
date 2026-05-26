@@ -37,9 +37,9 @@
             rb = new RadioButton();
             label3 = new Label();
             cbCategories = new ComboBox();
-            dateTimePicker1 = new DateTimePicker();
+            dtpDate = new DateTimePicker();
             label4 = new Label();
-            textBox1 = new TextBox();
+            txtBoxNote = new TextBox();
             label5 = new Label();
             btnConfirm = new Button();
             label6 = new Label();
@@ -54,9 +54,9 @@
             // 
             panelAddTransactions.Controls.Add(btnConfirm);
             panelAddTransactions.Controls.Add(label5);
-            panelAddTransactions.Controls.Add(textBox1);
+            panelAddTransactions.Controls.Add(txtBoxNote);
             panelAddTransactions.Controls.Add(label4);
-            panelAddTransactions.Controls.Add(dateTimePicker1);
+            panelAddTransactions.Controls.Add(dtpDate);
             panelAddTransactions.Controls.Add(cbCategories);
             panelAddTransactions.Controls.Add(label3);
             panelAddTransactions.Controls.Add(rb);
@@ -67,7 +67,7 @@
             panelAddTransactions.Dock = DockStyle.Left;
             panelAddTransactions.Location = new Point(0, 0);
             panelAddTransactions.Name = "panelAddTransactions";
-            panelAddTransactions.Size = new Size(325, 450);
+            panelAddTransactions.Size = new Size(240, 450);
             panelAddTransactions.TabIndex = 0;
             // 
             // panelTransactionsHistory
@@ -75,16 +75,16 @@
             panelTransactionsHistory.Controls.Add(dgvTransactions);
             panelTransactionsHistory.Controls.Add(label6);
             panelTransactionsHistory.Dock = DockStyle.Right;
-            panelTransactionsHistory.Location = new Point(325, 0);
+            panelTransactionsHistory.Location = new Point(240, 0);
             panelTransactionsHistory.Name = "panelTransactionsHistory";
-            panelTransactionsHistory.Size = new Size(325, 450);
+            panelTransactionsHistory.Size = new Size(410, 450);
             panelTransactionsHistory.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            label1.Location = new Point(78, 28);
+            label1.Location = new Point(49, 17);
             label1.Name = "label1";
             label1.Size = new Size(164, 21);
             label1.TabIndex = 0;
@@ -93,7 +93,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(18, 80);
+            label2.Location = new Point(3, 80);
             label2.Name = "label2";
             label2.Size = new Size(54, 15);
             label2.TabIndex = 1;
@@ -101,15 +101,15 @@
             // 
             // nudAmount
             // 
-            nudAmount.Location = new Point(78, 78);
+            nudAmount.Location = new Point(64, 78);
             nudAmount.Name = "nudAmount";
-            nudAmount.Size = new Size(200, 23);
+            nudAmount.Size = new Size(149, 23);
             nudAmount.TabIndex = 2;
             // 
             // rbIncome
             // 
             rbIncome.AutoSize = true;
-            rbIncome.Location = new Point(78, 132);
+            rbIncome.Location = new Point(64, 132);
             rbIncome.Name = "rbIncome";
             rbIncome.Size = new Size(65, 19);
             rbIncome.TabIndex = 3;
@@ -120,7 +120,7 @@
             // rb
             // 
             rb.AutoSize = true;
-            rb.Location = new Point(159, 132);
+            rb.Location = new Point(135, 132);
             rb.Name = "rb";
             rb.Size = new Size(68, 19);
             rb.TabIndex = 4;
@@ -131,7 +131,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(14, 182);
+            label3.Location = new Point(3, 182);
             label3.Name = "label3";
             label3.Size = new Size(58, 15);
             label3.TabIndex = 5;
@@ -140,38 +140,38 @@
             // cbCategories
             // 
             cbCategories.FormattingEnabled = true;
-            cbCategories.Location = new Point(78, 179);
+            cbCategories.Location = new Point(64, 179);
             cbCategories.Name = "cbCategories";
-            cbCategories.Size = new Size(200, 23);
+            cbCategories.Size = new Size(149, 23);
             cbCategories.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // dtpDate
             // 
-            dateTimePicker1.Location = new Point(78, 250);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
-            dateTimePicker1.TabIndex = 7;
+            dtpDate.Location = new Point(63, 244);
+            dtpDate.Name = "dtpDate";
+            dtpDate.Size = new Size(149, 23);
+            dtpDate.TabIndex = 7;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(38, 250);
+            label4.Location = new Point(23, 250);
             label4.Name = "label4";
             label4.Size = new Size(34, 15);
             label4.TabIndex = 8;
             label4.Text = "Date:";
             // 
-            // textBox1
+            // txtBoxNote
             // 
-            textBox1.Location = new Point(78, 334);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(200, 23);
-            textBox1.TabIndex = 9;
+            txtBoxNote.Location = new Point(63, 317);
+            txtBoxNote.Name = "txtBoxNote";
+            txtBoxNote.Size = new Size(149, 23);
+            txtBoxNote.TabIndex = 9;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(36, 337);
+            label5.Location = new Point(25, 320);
             label5.Name = "label5";
             label5.Size = new Size(36, 15);
             label5.TabIndex = 10;
@@ -179,9 +179,9 @@
             // 
             // btnConfirm
             // 
-            btnConfirm.Location = new Point(65, 394);
+            btnConfirm.Location = new Point(16, 383);
             btnConfirm.Name = "btnConfirm";
-            btnConfirm.Size = new Size(200, 42);
+            btnConfirm.Size = new Size(203, 42);
             btnConfirm.TabIndex = 11;
             btnConfirm.Text = "Confirm";
             btnConfirm.UseVisualStyleBackColor = true;
@@ -190,7 +190,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            label6.Location = new Point(67, 28);
+            label6.Location = new Point(102, 17);
             label6.Name = "label6";
             label6.Size = new Size(201, 21);
             label6.TabIndex = 1;
@@ -199,9 +199,9 @@
             // dgvTransactions
             // 
             dgvTransactions.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTransactions.Location = new Point(3, 78);
+            dgvTransactions.Location = new Point(3, 50);
             dgvTransactions.Name = "dgvTransactions";
-            dgvTransactions.Size = new Size(319, 358);
+            dgvTransactions.Size = new Size(404, 397);
             dgvTransactions.TabIndex = 2;
             // 
             // UC_Transactions
@@ -231,12 +231,12 @@
         private RadioButton rb;
         private RadioButton rbIncome;
         private Label label4;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dtpDate;
         private ComboBox cbCategories;
         private Label label3;
         private Button btnConfirm;
         private Label label5;
-        private TextBox textBox1;
+        private TextBox txtBoxNote;
         private DataGridView dgvTransactions;
         private Label label6;
     }
