@@ -12,7 +12,7 @@ namespace BudgetTracker.Models
     public class Category
     {
         [Key]
-        public int CategoryId { get; set; }
+        public int CategoryID { get; set; }
         public string CategoryName { get; set; }
         public decimal Limit { get; set; }
 
