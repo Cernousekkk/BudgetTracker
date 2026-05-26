@@ -1,8 +1,12 @@
+using System;
+using System.Linq;
+using System.Windows.Forms;
+
 namespace BudgetTracker
 {
-    public partial class MainPanelForm : Form
+    public partial class LoginForm : Form
     {
-        public MainPanelForm()
+        public LoginForm()
         {
             InitializeComponent();
         }
@@ -16,6 +20,11 @@ namespace BudgetTracker
                 if (user != null)
                 {
                     MessageBox.Show($"Welcome, {user.FullName}!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    this.Hide();
+                    MainForm mainPanel = new MainForm();
+                    mainPanel.ShowDialog();
+                    this.Close();
                 }
                 else
                 {
