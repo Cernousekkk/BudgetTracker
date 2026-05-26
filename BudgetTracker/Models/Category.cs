@@ -16,9 +16,10 @@ namespace BudgetTracker.Models
         public string CategoryName { get; set; }
         public decimal Limit { get; set; }
 
-        public Category(string categoryName)
+        public Category(string categoryName, decimal limit)
         {
-            categoryName = CategoryName;
+            CategoryName = categoryName;
+            Limit = limit;
         }
     }
 }
