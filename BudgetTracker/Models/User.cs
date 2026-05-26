@@ -12,16 +12,16 @@ namespace BudgetTracker.Models
     public class User
     {
         [Key]
-        public int UserId { get; set; }
+        public int UserID { get; set; }
         public string UserName { get; set; }
         public string FullName { get; set; }
         public string Password { get; set; }
 
         public User(string userName, string fullName, string password)
         {
-            userName = UserName;
-            fullName = FullName;
-            password = Password;
+            UserName = userName;
+            FullName = fullName;
+            Password = password;
         }
 
     }

@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             panelMenu = new Panel();
-            btnDashboard = new Button();
-            btnTransactions = new Button();
-            btnCategories = new Button();
             btnAnalysis = new Button();
+            btnCategories = new Button();
+            btnTransactions = new Button();
+            btnDashboard = new Button();
             panelObsah = new Panel();
             panelMenu.SuspendLayout();
             SuspendLayout();
@@ -50,32 +50,19 @@
             panelMenu.Size = new Size(150, 450);
             panelMenu.TabIndex = 0;
             // 
-            // btnDashboard
+            // btnAnalysis
             // 
-            btnDashboard.BackColor = Color.Transparent;
-            btnDashboard.Dock = DockStyle.Top;
-            btnDashboard.FlatStyle = FlatStyle.Flat;
-            btnDashboard.ForeColor = Color.White;
-            btnDashboard.Location = new Point(0, 0);
-            btnDashboard.Name = "btnDashboard";
-            btnDashboard.Size = new Size(150, 50);
-            btnDashboard.TabIndex = 0;
-            btnDashboard.Text = "Dashboard";
-            btnDashboard.UseVisualStyleBackColor = false;
-            btnDashboard.Click += btnDashboard_Click;
-            // 
-            // btnTransactions
-            // 
-            btnTransactions.BackColor = Color.Transparent;
-            btnTransactions.Dock = DockStyle.Top;
-            btnTransactions.FlatStyle = FlatStyle.Flat;
-            btnTransactions.ForeColor = Color.White;
-            btnTransactions.Location = new Point(0, 50);
-            btnTransactions.Name = "btnTransactions";
-            btnTransactions.Size = new Size(150, 50);
-            btnTransactions.TabIndex = 1;
-            btnTransactions.Text = "Transactions";
-            btnTransactions.UseVisualStyleBackColor = false;
+            btnAnalysis.BackColor = Color.Transparent;
+            btnAnalysis.Dock = DockStyle.Top;
+            btnAnalysis.FlatStyle = FlatStyle.Flat;
+            btnAnalysis.ForeColor = Color.White;
+            btnAnalysis.Location = new Point(0, 150);
+            btnAnalysis.Name = "btnAnalysis";
+            btnAnalysis.Size = new Size(150, 50);
+            btnAnalysis.TabIndex = 3;
+            btnAnalysis.Text = "Analysis";
+            btnAnalysis.UseVisualStyleBackColor = false;
+            btnAnalysis.Click += btnAnalysis_Click;
             // 
             // btnCategories
             // 
@@ -89,19 +76,35 @@
             btnCategories.TabIndex = 2;
             btnCategories.Text = "Categories";
             btnCategories.UseVisualStyleBackColor = false;
+            btnCategories.Click += btnCategories_Click;
             // 
-            // btnAnalysis
+            // btnTransactions
             // 
-            btnAnalysis.BackColor = Color.Transparent;
-            btnAnalysis.Dock = DockStyle.Top;
-            btnAnalysis.FlatStyle = FlatStyle.Flat;
-            btnAnalysis.ForeColor = Color.White;
-            btnAnalysis.Location = new Point(0, 150);
-            btnAnalysis.Name = "btnAnalysis";
-            btnAnalysis.Size = new Size(150, 50);
-            btnAnalysis.TabIndex = 3;
-            btnAnalysis.Text = "Analysis";
-            btnAnalysis.UseVisualStyleBackColor = false;
+            btnTransactions.BackColor = Color.Transparent;
+            btnTransactions.Dock = DockStyle.Top;
+            btnTransactions.FlatStyle = FlatStyle.Flat;
+            btnTransactions.ForeColor = Color.White;
+            btnTransactions.Location = new Point(0, 50);
+            btnTransactions.Name = "btnTransactions";
+            btnTransactions.Size = new Size(150, 50);
+            btnTransactions.TabIndex = 1;
+            btnTransactions.Text = "Transactions";
+            btnTransactions.UseVisualStyleBackColor = false;
+            btnTransactions.Click += btnTransactions_Click;
+            // 
+            // btnDashboard
+            // 
+            btnDashboard.BackColor = Color.Transparent;
+            btnDashboard.Dock = DockStyle.Top;
+            btnDashboard.FlatStyle = FlatStyle.Flat;
+            btnDashboard.ForeColor = Color.White;
+            btnDashboard.Location = new Point(0, 0);
+            btnDashboard.Name = "btnDashboard";
+            btnDashboard.Size = new Size(150, 50);
+            btnDashboard.TabIndex = 0;
+            btnDashboard.Text = "Dashboard";
+            btnDashboard.UseVisualStyleBackColor = false;
+            btnDashboard.Click += btnDashboard_Click;
             // 
             // panelObsah
             // 
@@ -119,7 +122,7 @@
             Controls.Add(panelObsah);
             Controls.Add(panelMenu);
             Name = "MainForm";
-            Text = "MainPanelForm";
+            Text = "MainForm";
             panelMenu.ResumeLayout(false);
             ResumeLayout(false);
         }

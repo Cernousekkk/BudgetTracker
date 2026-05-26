@@ -12,21 +12,21 @@ namespace BudgetTracker.Models
     public class Transaction
     {
         [Key]
-        public int Id { get; set; }
+        public int TransactionID { get; set; }
         public decimal Amount { get; set; }
         public DateTime Date { get; set; }
         public string Note { get; set; }
-        public int UserId { get; set; }
+        public int UserID { get; set; }
         public User User { get; set; }
-        public int CategoryId { get; set; }
+        public int CategoryID { get; set; }
         public Category Category { get; set; }
 
-        public Transaction(decimal amount, string note, int userId, int categoryId)
+        public Transaction(decimal amount, string note, int userID, int categoryID)
         {
-            amount = Amount;
-            note = Note;
-            categoryId = CategoryId;
-            userId = UserId;
+            Amount = amount;
+            Note = note;
+            CategoryID = categoryID;
+            UserID = userID;
         }
     }
 }

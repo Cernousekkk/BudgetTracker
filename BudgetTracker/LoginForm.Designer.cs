@@ -1,6 +1,6 @@
 ﻿namespace BudgetTracker
 {
-    partial class MainPanelForm
+    partial class LoginForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -77,7 +77,7 @@
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
             // 
-            // MainForm
+            // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -87,7 +87,7 @@
             Controls.Add(txtBoxUserName);
             Controls.Add(lblPassword);
             Controls.Add(lblUserName);
-            Name = "MainForm";
+            Name = "LoginForm";
             Text = "MainForm";
             ResumeLayout(false);
             PerformLayout();
