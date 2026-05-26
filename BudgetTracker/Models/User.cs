@@ -19,9 +19,9 @@ namespace BudgetTracker.Models
 
         public User(string userName, string fullName, string password)
         {
-            userName = UserName;
-            fullName = FullName;
-            password = Password;
+            UserName = userName;
+            FullName = fullName;
+            Password = password;
         }
 
     }

@@ -23,10 +23,10 @@ namespace BudgetTracker.Models
 
         public Transaction(decimal amount, string note, int userId, int categoryId)
         {
-            amount = Amount;
-            note = Note;
-            categoryId = CategoryId;
-            userId = UserId;
+            Amount = amount;
+            Note = note;
+            CategoryId = categoryId;
+            UserId = userId;
         }
     }
 }
