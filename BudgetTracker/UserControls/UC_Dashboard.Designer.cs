@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            label1 = new Label();
             lblBalance = new Label();
-            label2 = new Label();
-            label3 = new Label();
+            label1 = new Label();
+            panel2 = new Panel();
             lblIncomeMonth = new Label();
-            label4 = new Label();
+            label2 = new Label();
+            panel3 = new Panel();
+            lblExpenses = new Label();
+            label3 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -52,6 +52,26 @@
             panel1.Size = new Size(219, 450);
             panel1.TabIndex = 0;
             // 
+            // lblBalance
+            // 
+            lblBalance.AutoSize = true;
+            lblBalance.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            lblBalance.Location = new Point(73, 90);
+            lblBalance.Name = "lblBalance";
+            lblBalance.Size = new Size(62, 25);
+            lblBalance.TabIndex = 1;
+            lblBalance.Text = "10000";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label1.Location = new Point(64, 32);
+            label1.Name = "label1";
+            label1.Size = new Size(82, 21);
+            label1.TabIndex = 0;
+            label1.Text = "BALANCE";
+            // 
             // panel2
             // 
             panel2.Controls.Add(lblIncomeMonth);
@@ -62,35 +82,16 @@
             panel2.Size = new Size(221, 450);
             panel2.TabIndex = 1;
             // 
-            // panel3
+            // lblIncomeMonth
             // 
-            panel3.Controls.Add(label4);
-            panel3.Controls.Add(label3);
-            panel3.Dock = DockStyle.Left;
-            panel3.Location = new Point(440, 0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(210, 450);
-            panel3.TabIndex = 2;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            label1.Location = new Point(63, 32);
-            label1.Name = "label1";
-            label1.Size = new Size(87, 21);
-            label1.TabIndex = 0;
-            label1.Text = "ZŮSTATEK";
-            // 
-            // lblBalance
-            // 
-            lblBalance.AutoSize = true;
-            lblBalance.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            lblBalance.Location = new Point(63, 90);
-            lblBalance.Name = "lblBalance";
-            lblBalance.Size = new Size(62, 25);
-            lblBalance.TabIndex = 1;
-            lblBalance.Text = "10000";
+            lblIncomeMonth.AutoSize = true;
+            lblIncomeMonth.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            lblIncomeMonth.ForeColor = Color.LimeGreen;
+            lblIncomeMonth.Location = new Point(78, 90);
+            lblIncomeMonth.Name = "lblIncomeMonth";
+            lblIncomeMonth.Size = new Size(62, 25);
+            lblIncomeMonth.TabIndex = 2;
+            lblIncomeMonth.Text = "10000";
             // 
             // label2
             // 
@@ -98,41 +99,40 @@
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label2.Location = new Point(25, 32);
             label2.Name = "label2";
-            label2.Size = new Size(174, 21);
+            label2.Size = new Size(178, 21);
             label2.TabIndex = 1;
-            label2.Text = "PŘÍJMY TENTO MĚSÍC";
+            label2.Text = "INCOME THIS MONTH";
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(lblExpenses);
+            panel3.Controls.Add(label3);
+            panel3.Dock = DockStyle.Left;
+            panel3.Location = new Point(440, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(210, 450);
+            panel3.TabIndex = 2;
+            // 
+            // lblExpenses
+            // 
+            lblExpenses.AutoSize = true;
+            lblExpenses.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            lblExpenses.ForeColor = Color.Red;
+            lblExpenses.Location = new Point(77, 90);
+            lblExpenses.Name = "lblExpenses";
+            lblExpenses.Size = new Size(62, 25);
+            lblExpenses.TabIndex = 3;
+            lblExpenses.Text = "10000";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            label3.Location = new Point(20, 32);
+            label3.Location = new Point(6, 32);
             label3.Name = "label3";
-            label3.Size = new Size(178, 21);
+            label3.Size = new Size(201, 21);
             label3.TabIndex = 2;
-            label3.Text = "VÝDAJE TENTO MĚSÍC";
-            // 
-            // lblIncomeMonth
-            // 
-            lblIncomeMonth.AutoSize = true;
-            lblIncomeMonth.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            lblIncomeMonth.ForeColor = Color.LimeGreen;
-            lblIncomeMonth.Location = new Point(75, 90);
-            lblIncomeMonth.Name = "lblIncomeMonth";
-            lblIncomeMonth.Size = new Size(62, 25);
-            lblIncomeMonth.TabIndex = 2;
-            lblIncomeMonth.Text = "10000";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            label4.ForeColor = Color.Red;
-            label4.Location = new Point(73, 90);
-            label4.Name = "label4";
-            label4.Size = new Size(62, 25);
-            label4.TabIndex = 3;
-            label4.Text = "10000";
+            label3.Text = "EXPENSESS THIS MONTH";
             // 
             // UC_Dashboard
             // 
@@ -162,6 +162,6 @@
         private Label label2;
         private Label label3;
         private Label lblIncomeMonth;
-        private Label label4;
+        private Label lblExpenses;
     }
 }
