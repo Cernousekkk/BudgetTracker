@@ -28,31 +28,109 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnSaveTran = new Button();
+            panelMenu = new Panel();
+            btnDashboard = new Button();
+            btnTransactions = new Button();
+            btnCategories = new Button();
+            btnAnalysis = new Button();
+            panelObsah = new Panel();
+            panelMenu.SuspendLayout();
             SuspendLayout();
             // 
-            // btnSaveTran
+            // panelMenu
             // 
-            btnSaveTran.Location = new Point(677, 409);
-            btnSaveTran.Name = "btnSaveTran";
-            btnSaveTran.Size = new Size(111, 29);
-            btnSaveTran.TabIndex = 0;
-            btnSaveTran.Text = "Save Transaction";
-            btnSaveTran.UseVisualStyleBackColor = true;
+            panelMenu.BackColor = SystemColors.MenuHighlight;
+            panelMenu.Controls.Add(btnAnalysis);
+            panelMenu.Controls.Add(btnCategories);
+            panelMenu.Controls.Add(btnTransactions);
+            panelMenu.Controls.Add(btnDashboard);
+            panelMenu.Dock = DockStyle.Left;
+            panelMenu.Location = new Point(0, 0);
+            panelMenu.Name = "panelMenu";
+            panelMenu.Size = new Size(150, 450);
+            panelMenu.TabIndex = 0;
             // 
-            // AddTransactionForm
+            // btnDashboard
+            // 
+            btnDashboard.BackColor = Color.Transparent;
+            btnDashboard.Dock = DockStyle.Top;
+            btnDashboard.FlatStyle = FlatStyle.Flat;
+            btnDashboard.ForeColor = Color.White;
+            btnDashboard.Location = new Point(0, 0);
+            btnDashboard.Name = "btnDashboard";
+            btnDashboard.Size = new Size(150, 50);
+            btnDashboard.TabIndex = 0;
+            btnDashboard.Text = "Dashboard";
+            btnDashboard.UseVisualStyleBackColor = false;
+            btnDashboard.Click += btnDashboard_Click;
+            // 
+            // btnTransactions
+            // 
+            btnTransactions.BackColor = Color.Transparent;
+            btnTransactions.Dock = DockStyle.Top;
+            btnTransactions.FlatStyle = FlatStyle.Flat;
+            btnTransactions.ForeColor = Color.White;
+            btnTransactions.Location = new Point(0, 50);
+            btnTransactions.Name = "btnTransactions";
+            btnTransactions.Size = new Size(150, 50);
+            btnTransactions.TabIndex = 1;
+            btnTransactions.Text = "Transactions";
+            btnTransactions.UseVisualStyleBackColor = false;
+            // 
+            // btnCategories
+            // 
+            btnCategories.BackColor = Color.Transparent;
+            btnCategories.Dock = DockStyle.Top;
+            btnCategories.FlatStyle = FlatStyle.Flat;
+            btnCategories.ForeColor = Color.White;
+            btnCategories.Location = new Point(0, 100);
+            btnCategories.Name = "btnCategories";
+            btnCategories.Size = new Size(150, 50);
+            btnCategories.TabIndex = 2;
+            btnCategories.Text = "Categories";
+            btnCategories.UseVisualStyleBackColor = false;
+            // 
+            // btnAnalysis
+            // 
+            btnAnalysis.BackColor = Color.Transparent;
+            btnAnalysis.Dock = DockStyle.Top;
+            btnAnalysis.FlatStyle = FlatStyle.Flat;
+            btnAnalysis.ForeColor = Color.White;
+            btnAnalysis.Location = new Point(0, 150);
+            btnAnalysis.Name = "btnAnalysis";
+            btnAnalysis.Size = new Size(150, 50);
+            btnAnalysis.TabIndex = 3;
+            btnAnalysis.Text = "Analysis";
+            btnAnalysis.UseVisualStyleBackColor = false;
+            // 
+            // panelObsah
+            // 
+            panelObsah.Dock = DockStyle.Fill;
+            panelObsah.Location = new Point(150, 0);
+            panelObsah.Name = "panelObsah";
+            panelObsah.Size = new Size(650, 450);
+            panelObsah.TabIndex = 1;
+            // 
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(btnSaveTran);
-            Name = "AddTransactionForm";
-            Text = "AddTransactionForm";
+            Controls.Add(panelObsah);
+            Controls.Add(panelMenu);
+            Name = "MainForm";
+            Text = "MainPanelForm";
+            panelMenu.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button btnSaveTran;
+        private Panel panelMenu;
+        private Button btnDashboard;
+        private Button btnAnalysis;
+        private Button btnCategories;
+        private Button btnTransactions;
+        private Panel panelObsah;
     }
 }

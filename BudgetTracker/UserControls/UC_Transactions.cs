@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BudgetTracker
+namespace BudgetTracker.UserControls
 {
-    public partial class MainForm : Form
+    public partial class UC_Transactions : UserControl
     {
-        public MainForm()
+        public UC_Transactions()
         {
             InitializeComponent();
-        }
-
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
