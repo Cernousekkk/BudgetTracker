@@ -21,10 +21,11 @@ namespace BudgetTracker.Models
         public int CategoryID { get; set; }
         public Category Category { get; set; }
 
-        public Transaction(decimal amount, string note, int userID, int categoryID)
+        public Transaction(decimal amount, string note, DateTime date, int userID, int categoryID)
         {
             Amount = amount;
             Note = note;
+            Date = date;
             CategoryID = categoryID;
             UserID = userID;
         }

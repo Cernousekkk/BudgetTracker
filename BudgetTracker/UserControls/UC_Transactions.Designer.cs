@@ -191,6 +191,7 @@
             // 
             // dgvTransactions
             // 
+            dgvTransactions.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvTransactions.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvTransactions.Location = new Point(3, 50);
             dgvTransactions.Name = "dgvTransactions";

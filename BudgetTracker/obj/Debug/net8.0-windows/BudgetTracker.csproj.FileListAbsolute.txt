@@ -48,3 +48,5 @@ C:\Users\pavli\Desktop\SSSVT\3.C\PRG\BudgetTracker\BudgetTracker\BudgetTracker\o
 C:\Users\pavli\Desktop\SSSVT\3.C\PRG\BudgetTracker\BudgetTracker\BudgetTracker\obj\Debug\net8.0-windows\BudgetTracker.pdb
 C:\Users\pavli\Desktop\SSSVT\3.C\PRG\BudgetTracker\BudgetTracker\BudgetTracker\obj\Debug\net8.0-windows\BudgetTracker.genruntimeconfig.cache
 C:\Users\pavli\Desktop\SSSVT\3.C\PRG\BudgetTracker\BudgetTracker\BudgetTracker\obj\Debug\net8.0-windows\ref\BudgetTracker.dll
+C:\Users\pavli\Desktop\SSSVT\3.C\PRG\BudgetTracker\BudgetTracker\BudgetTracker\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\pavli\Desktop\SSSVT\3.C\PRG\BudgetTracker\BudgetTracker\BudgetTracker\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
