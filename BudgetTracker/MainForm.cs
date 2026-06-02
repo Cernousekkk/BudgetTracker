@@ -17,6 +17,7 @@ namespace BudgetTracker
         public MainForm()
         {
             InitializeComponent();
+            ShowPage(new UC_Dashboard());
         }
 
         private void ShowPage(UserControl newPage)

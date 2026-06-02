@@ -67,7 +67,7 @@ namespace BudgetTracker.UserControls
 
             int selectedCategoryID = Convert.ToInt32(cbCategories.SelectedValue);
 
-            Models.Transaction newTransaction = new(amount, txtBoxNote.Text, 1, selectedCategoryID);
+            Models.Transaction newTransaction = new(amount, txtBoxNote.Text, dtpDate.Value, 1, selectedCategoryID);
 
             using (var context = new AppDbContext())
             {

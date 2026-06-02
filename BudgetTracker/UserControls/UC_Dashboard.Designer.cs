@@ -37,9 +37,11 @@
             panel3 = new Panel();
             lblExpenses = new Label();
             label3 = new Label();
+            dgRecentTransactions = new DataGridView();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgRecentTransactions).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -56,7 +58,7 @@
             // 
             lblBalance.AutoSize = true;
             lblBalance.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            lblBalance.Location = new Point(73, 90);
+            lblBalance.Location = new Point(48, 90);
             lblBalance.Name = "lblBalance";
             lblBalance.Size = new Size(62, 25);
             lblBalance.TabIndex = 1;
@@ -87,7 +89,7 @@
             lblIncomeMonth.AutoSize = true;
             lblIncomeMonth.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
             lblIncomeMonth.ForeColor = Color.LimeGreen;
-            lblIncomeMonth.Location = new Point(78, 90);
+            lblIncomeMonth.Location = new Point(52, 90);
             lblIncomeMonth.Name = "lblIncomeMonth";
             lblIncomeMonth.Size = new Size(62, 25);
             lblIncomeMonth.TabIndex = 2;
@@ -118,7 +120,7 @@
             lblExpenses.AutoSize = true;
             lblExpenses.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
             lblExpenses.ForeColor = Color.Red;
-            lblExpenses.Location = new Point(77, 90);
+            lblExpenses.Location = new Point(56, 90);
             lblExpenses.Name = "lblExpenses";
             lblExpenses.Size = new Size(62, 25);
             lblExpenses.TabIndex = 3;
@@ -134,21 +136,34 @@
             label3.TabIndex = 2;
             label3.Text = "EXPENSESS THIS MONTH";
             // 
+            // dgRecentTransactions
+            // 
+            dgRecentTransactions.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgRecentTransactions.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgRecentTransactions.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgRecentTransactions.Location = new Point(0, 250);
+            dgRecentTransactions.Name = "dgRecentTransactions";
+            dgRecentTransactions.Size = new Size(650, 200);
+            dgRecentTransactions.TabIndex = 3;
+            // 
             // UC_Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(dgRecentTransactions);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "UC_Dashboard";
             Size = new Size(650, 450);
+            Load += UC_Dashboard_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgRecentTransactions).EndInit();
             ResumeLayout(false);
         }
 
@@ -163,5 +178,6 @@
         private Label label3;
         private Label lblIncomeMonth;
         private Label lblExpenses;
+        private DataGridView dgRecentTransactions;
     }
 }

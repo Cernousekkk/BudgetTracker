@@ -61,6 +61,10 @@
             "MySql.EntityFrameworkCore": {
               "target": "Package",
               "version": "[10.0.7, )"
+            },
+            "WinForms.DataVisualization": {
+              "target": "Package",
+              "version": "[1.10.2, )"
             }
           },
           "imports": [
